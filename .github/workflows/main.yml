@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Code checkout
         uses: actions/checkout@v4
-        
+
       - name: Maven test
         run: mvn test
 
@@ -27,7 +27,6 @@ jobs:
       # Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
-
 
       # Run sonar-scanner
       - name: SonarQube Scan
